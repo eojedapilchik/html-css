@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sig-in</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+
+        *{
+            box-sizing: border-box;
+            padding:0;
+            margin:0;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        body{
+            background-color: #344a72;
+            font-family: 'Raleway', sans-serif;  
+            line-height: 1.8;
+        }
+
+        #container{
+            margin:30px auto; /* 30px to move it down a bit*/
+            height: fit-content;
+            width: 400px;
+        }
+
+        #form-wrapper{
+            background-color: #ffffff;
+            padding: 15px 25px;
+        }
+
+        #form-wrapper h2,
+        #form-wrapper p{
+            text-align: center;
+        }
+
+        .form-group{
+            margin-top: 5px;
+        }
+        .form-group label{
+            display: block;
+            color: #666;
+        }
+
+        .form-group input{
+            width: 100%;
+            height: 30px;
+            border: #dddddd 1px solid;
+            border-radius: 5 px;
+        }
+
+        footer{
+            color:#ffffff;
+            margin-top: 10px;
+            text-align: center;
+
+        }
+        footer a{
+            color: #49c1a2;
+        }
+
+        .btn{
+            border-radius: 5px;
+            background-color:#49c1a2;
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            color:#fff;
+            border: none;
+            cursor:pointer;
+            text-align: center;
+            width: 100%;
+            
+        }
+        .btn:hover{
+            background: #37a08e;         
+        }
+
+        #frm-bottom-text{
+            font-size: 13px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="form-wrapper">
+            <h2>Sign Up</h2>
+            <p>It's free and only takes a minute</p>
+            <form action="" id="sign-up">
+                <div class="form-group">
+                    <label for="first_name" class="labels">First Name</label>
+                    <input type="text" class ="text-box">
+                </div>
+
+                <div class="form-group">
+                    <label for="last_name" class="labels">Last Name</label>
+                    <input type="text" class ="text-box">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="labels">Email</label>
+                    <input type="email" class ="text-box" name="">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd" class="labels">Password</label>
+                    <input type="password" class ="text-box" name="pwd">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd_confirm" class="labels">Confirm Password</label>
+                    <input type="password" class ="text-box" name="pwd_confirm">
+                </div>
+
+                <button type="submit" class ="btn">Sign up</button>
+                  
+                <p id="frm-bottom-text">
+                    By click the Sign Up button, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>
+                </p>
+
+            </form>
+        </div>
+        <footer>
+            <p>Already have an account? <a href="#">Login Here</a></p>
+        </footer>
+    </div>
+</body>
+</html>
